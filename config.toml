@@ -1,0 +1,8 @@
+import warnings
+import logging
+
+streamlit watcher و transformers 
+logging.getLogger("streamlit.watcher.local_sources_watcher").setLevel(logging.ERROR)
+warnings.filterwarnings("ignore", category=UserWarning)
+[server]
+fileWatcherType = "none"
